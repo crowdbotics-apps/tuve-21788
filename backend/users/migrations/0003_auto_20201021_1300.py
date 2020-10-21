@@ -6,37 +6,37 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('users', '0002_auto_20201021_1259'),
+        ("users", "0002_auto_20201021_1259"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='user',
-            name='group',
+            model_name="user",
+            name="group",
         ),
         migrations.AddField(
-            model_name='user',
-            name='last_updated',
+            model_name="user",
+            name="last_updated",
             field=models.DateTimeField(auto_now=True, null=True),
         ),
         migrations.AddField(
-            model_name='user',
-            name='timestamp_created',
+            model_name="user",
+            name="timestamp_created",
             field=models.DateTimeField(auto_now_add=True, null=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='email',
+            model_name="user",
+            name="email",
             field=models.EmailField(blank=True, max_length=255, null=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='first_name',
+            model_name="user",
+            name="first_name",
             field=models.CharField(blank=True, max_length=255, null=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='last_name',
+            model_name="user",
+            name="last_name",
             field=models.CharField(blank=True, max_length=255, null=True),
         ),
     ]
